@@ -21,10 +21,12 @@ $this->registerModule(
     '0.1',
     [
         'requires'    => [['core', '2.24']],
-        'permissions' => dcAuth::PERMISSION_USAGE,
-        'type'        => 'plugin',
-        'support'     => 'https://github.com/JcDenis/mail2log',
-        'details'     => 'https://plugins.dotaddict.org/dc2/details/mail2log',
-        'repository'  => 'https://raw.githubusercontent.com/JcDenis/mail2log/master/dcstore.xml',
+        'permissions' => dcCore::app()->auth->makePermissions([
+            dcAuth::PERMISSION_USAGE,
+        ]),
+        'type'       => 'plugin',
+        'support'    => 'https://github.com/JcDenis/mail2log',
+        'details'    => 'https://plugins.dotaddict.org/dc2/details/mail2log',
+        'repository' => 'https://raw.githubusercontent.com/JcDenis/mail2log/master/dcstore.xml',
     ]
 );
