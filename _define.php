@@ -18,7 +18,7 @@ $this->registerModule(
     basename(__DIR__),
     'Do not send mails but log them',
     'Jean-Christian Denis and contributors',
-    '0.1',
+    '0.2',
     [
         'requires'    => [['core', '2.24']],
         'permissions' => dcCore::app()->auth->makePermissions([
