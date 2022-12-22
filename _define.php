@@ -15,7 +15,7 @@ if (!defined('DC_RC_PATH')) {
 }
 
 $this->registerModule(
-    basename(__DIR__),
+    'mail2log',
     'Do not send mails but log them',
     'Jean-Christian Denis and contributors',
     '0.2',
