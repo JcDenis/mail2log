@@ -20,7 +20,7 @@ if (!function_exists('_mail')) {
         $headers = is_array($headers) ? implode("\n\t", $headers) : (string) $headers;
 
         $cur            = dcCore::app()->con->openCursor(dcCore::app()->prefix . dcLog::LOG_TABLE_NAME);
-        $cur->log_table = 'mail2log';
+        $cur->log_table = basename(__DIR__);
         $cur->log_msg   = sprintf("%s\n-----\n To: %s\n Subject: %s\n-----\n Message:\n%s\n", $headers, $to, $subject, $message);
         dcCore::app()->log->addLog($cur);
 

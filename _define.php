@@ -15,7 +15,7 @@ if (!defined('DC_RC_PATH')) {
 }
 
 $this->registerModule(
-    'mail2log',
+    basename(__DIR__),
     'Do not send mails but log them',
     'Jean-Christian Denis and contributors',
     '0.1',
@@ -24,9 +24,9 @@ $this->registerModule(
         'permissions' => dcCore::app()->auth->makePermissions([
             dcAuth::PERMISSION_USAGE,
         ]),
-        'type'       => 'plugin',
-        'support'    => 'https://github.com/JcDenis/mail2log',
-        'details'    => 'https://plugins.dotaddict.org/dc2/details/mail2log',
-        'repository' => 'https://raw.githubusercontent.com/JcDenis/mail2log/master/dcstore.xml',
+        'type'        => 'plugin',
+        'support'     => 'https://github.com/JcDenis/' . basename(__DIR__),
+        'details'     => 'https://plugins.dotaddict.org/dc2/details/' . basename(__DIR__),
+        'repository'  => 'https://raw.githubusercontent.com/JcDenis/' . basename(__DIR__) . '/master/dcstore.xml',
     ]
 );
