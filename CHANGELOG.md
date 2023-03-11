@@ -1,3 +1,8 @@
+0.3 - 2023.03.11
+- one file plugin
+- should be compatible with Dotclear 2.26
+- translate plugin description
+
 0.2 - 2022.12.22
 - use abstract plugin id
 - fix permissions
