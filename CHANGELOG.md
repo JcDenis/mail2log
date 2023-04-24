@@ -1,3 +1,7 @@
+0.4 - 2023.04.24
+- fix nullsafe warnings
+- fix type hint
+
 0.3 - 2023.03.11
 - one file plugin
 - should be compatible with Dotclear 2.26
