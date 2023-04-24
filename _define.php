@@ -32,9 +32,9 @@ $this->registerModule(
 );
 
 if (!function_exists('\_mail')) {
-    function _mail($to, $subject, $message, $headers)
+    function _mail(string $to, string $subject, string $message, string|array $headers = '', ?string $params = null): bool
     {
-        $headers = is_array($headers) ? implode("\n\t", $headers) : (string) $headers;
+        $headers = is_array($headers) ? implode("\n\t", $headers) : $headers;
 
         $cur = dcCore::app()->con->openCursor(dcCore::app()->prefix . dcLog::LOG_TABLE_NAME);
         $cur->setField('log_table', basename(__DIR__));
