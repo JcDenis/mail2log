@@ -18,7 +18,7 @@ $this->registerModule(
     'Mail to log',
     'Do not send mails but log them',
     'Jean-Christian Denis and contributors',
-    '0.4',
+    '0.4.1',
     [
         'requires'    => [['core', '2.24']],
         'permissions' => dcCore::app()->auth->makePermissions([
@@ -32,9 +32,9 @@ $this->registerModule(
 );
 
 if (!function_exists('\_mail')) {
-    function _mail(string $to, string $subject, string $message, string|array $headers = '', ?string $params = null): bool
+    function _mail(string $to, string $subject, string $message, $headers = '', ?string $params = null): bool
     {
-        $headers = is_array($headers) ? implode("\n\t", $headers) : $headers;
+        $headers = is_array($headers) ? implode("\n\t", $headers) : (is_string($headers) ? $headers : '');
 
         $cur = dcCore::app()->con->openCursor(dcCore::app()->prefix . dcLog::LOG_TABLE_NAME);
         $cur->setField('log_table', basename(__DIR__));

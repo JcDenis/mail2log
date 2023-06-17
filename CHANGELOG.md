@@ -1,3 +1,6 @@
+0.4.1 - 2023.06.17
+- fix php7.4 compatibility
+
 0.4 - 2023.04.24
 - fix nullsafe warnings
 - fix type hint
