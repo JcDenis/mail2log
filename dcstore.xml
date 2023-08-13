@@ -2,12 +2,12 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="mail2log">
     <name>Mail to log</name>
-    <version>0.4.1</version>
+    <version>0.5</version>
     <author>Jean-Christian Denis and contributors</author>
     <desc>Do not send mails but log them</desc>
-    <file>https://github.com/JcDenis/mail2log/releases/download/v0.4.1/plugin-mail2log.zip</file>
+    <file>https://git.dotclear.watch/JcDenis/mail2log/releases/download/v0.5/plugin-mail2log.zip</file>
     <da:dcmin>2.24</da:dcmin>
-    <da:details>https://plugins.dotaddict.org/dc2/details/mail2log</da:details>
-    <da:support>https://github.com/JcDenis/mail2log</da:support>
+    <da:details>https://git.dotclear.watch/JcDenis/mail2log/src/branch/master/README.md</da:details>
+    <da:support>https://git.dotclear.watch/JcDenis/mail2log/issues</da:support>
   </module>
 </modules>
