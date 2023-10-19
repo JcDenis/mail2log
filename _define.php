@@ -17,7 +17,7 @@ $this->registerModule(
     'Mail to log',
     'Do not send mails but log them',
     'Jean-Christian Denis and contributors',
-    '0.7',
+    '0.7.1',
     [
         'requires'    => [['core', '2.28']],
         'permissions' => 'My',
@@ -33,10 +33,10 @@ if (!function_exists('\_mail')) {
     {
         $headers = is_array($headers) ? implode("\n\t", $headers) : (is_string($headers) ? $headers : '');
 
-        $cur = App::log()->openLogCursor();
+        $cur = Dotclear\App::log()->openLogCursor();
         $cur->setField('log_table', basename(__DIR__));
         $cur->setField('log_msg', sprintf("%s\n-----\n To: %s\n Subject: %s\n-----\n Message:\n%s\n", $headers, $to, $subject, $message));
-        App::log()->addLog($cur);
+        Dotclear\App::log()->addLog($cur);
 
         return true;
     }
