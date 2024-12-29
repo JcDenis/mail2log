@@ -15,5 +15,8 @@ use Dotclear\Module\MyPlugin;
  */
 class My extends MyPlugin
 {
-    // use default permissions
+    protected static function checkCustomContext(int $context): ?bool
+    {
+        return true;
+    }
 }
