@@ -11,7 +11,7 @@
 use Dotclear\App;
 
 if (!function_exists('\_mail')) {
-    function _mail(string $to, string $subject, string $message, $headers = '', ?string $params = null): bool
+    function _mail(string $to, string $subject, string $message, mixed $headers = '', ?string $params = null): bool
     {
         $cur = App::log()->openLogCursor();
         $cur->setField('log_table', 'mail2log');
