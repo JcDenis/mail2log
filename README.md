@@ -2,7 +2,7 @@
 
 [![Release](https://img.shields.io/github/v/release/jcdenis/mail2log?color=lightblue)](https://github.com/JcDenis/mail2log/releases)
 ![Date](https://img.shields.io/github/release-date/jcdenis/mail2log?color=red)
-[![Dotclear](https://img.shields.io/badge/dotclear-v2.33-137bbb.svg)](https://fr.dotclear.org/download)
+[![Dotclear](https://img.shields.io/badge/dotclear-v2.36-137bbb.svg)](https://fr.dotclear.org/download)
 [![Dotaddict](https://img.shields.io/badge/dotaddict-official-9ac123.svg)](https://plugins.dotaddict.org/dc2/details/mail2log)
 [![License](https://img.shields.io/github/license/jcdenis/mail2log?color=white)](https://github.com/JcDenis/mail2log/blob/master/LICENSE)
 
@@ -14,7 +14,7 @@ _mail2log_ is a plugin for the open-source web publishing software called [Dotcl
 
 ## REQUIREMENTS
 
-* Dotclear 2.28
+* Dotclear 2.36
 * PHP 8.1+
 * A plugin to read log. (dcLog)
 

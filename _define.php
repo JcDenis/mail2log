@@ -17,9 +17,9 @@ $this->registerModule(
     'Mail to log',
     'Do not send mails but log them',
     'Jean-Christian Denis and contributors',
-    '0.9.1',
+    '1.0',
     [
-        'requires'    => [['core', '2.28']],
+        'requires'    => [['core', '2.36']],
         'permissions' => 'My',
         'priority'    => 10,
         'type'        => 'plugin',
