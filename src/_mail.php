@@ -17,7 +17,7 @@ if (!function_exists('\_mail')) {
         $cur->setField('log_table', 'mail2log');
         $cur->setField('log_msg', sprintf(
             "%s\n-----\n To: %s\n Subject: %s\n-----\n Message:\n%s\n",
-            is_array($headers) ? implode("\n\t", $headers) : (is_string($headers) ? $headers : ''),
+            is_array($headers) ? implode("\n\t", array_filter($headers, is_string(...))) : (is_string($headers) ? $headers : ''),
             $to,
             $subject,
             $message
