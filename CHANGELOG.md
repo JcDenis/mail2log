@@ -1,4 +1,4 @@
-mail2log 1.x - xxxx.xx.xx
+mail2log 1.1 - 2026.08.12
 ===========================================================
 * Code review (phpstan max)
 
