@@ -20,6 +20,8 @@ Pour lire les mails enregistrés, il faut un plugin qui affiche le journal de Do
 
 Installez et activez le plugin : il n'y a rien d'autre à faire. Dès l'activation, les mails que Dotclear envoie depuis l'administration sont stockés dans le journal au lieu d'être envoyés. Cela permet de vérifier le contenu d'un mail sans serveur de messagerie. Le plugin testMail permet par exemple d'envoyer un mail de test.
 
+Tant que le plugin est actif, le tableau de bord affiche un avertissement : « Le plugin « Mail en log » est activé : les mails ne sont pas envoyés mais enregistrés dans le journal. À n'utiliser que pour le développement. »
+
 ## Lire les mails
 
 Ouvrez **Système → Journaux**. Chaque mail est une ligne dont le composant est « mail2log ». Le message contient les en-têtes du mail, le destinataire (« To »), le sujet (« Subject ») et le texte.
@@ -34,6 +36,6 @@ Dans la liste des plugins, le bouton « Désinstaller » propose de supprimer le
 
 ## Bon à savoir
 
-* Seuls les mails envoyés depuis l'administration sont interceptés. Le mail de récupération de mot de passe demandé depuis la page de connexion de l'administration est, lui, bien envoyé et n'est pas enregistré.
-* La colonne « Utilisateur » du journal affiche « inconnu » pour ces mails.
+* Seuls les mails envoyés une fois les plugins chargés sont interceptés. Le mail de récupération de mot de passe demandé depuis la page de connexion de l'administration est, lui, bien envoyé et n'est pas enregistré.
+* La colonne « Utilisateur » du journal indique l'utilisateur connecté qui a déclenché le mail. Elle affiche « inconnu » quand personne n'est connecté.
 * Les mails sont enregistrés sous forme de texte brut : les pièces jointes et les mails HTML ne sont pas décodés.
