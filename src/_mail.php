@@ -15,6 +15,9 @@ if (!function_exists('\_mail')) {
     {
         $cur = App::log()->openLogCursor();
         $cur->setField('log_table', 'mail2log');
+        if (App::auth()->userID() !== '') {
+            $cur->setField('user_id', App::auth()->userID());
+        }
         $cur->setField('log_msg', sprintf(
             "%s\n-----\n To: %s\n Subject: %s\n-----\n Message:\n%s\n",
             is_array($headers) ? implode("\n\t", array_filter($headers, is_string(...))) : (is_string($headers) ? $headers : ''),
