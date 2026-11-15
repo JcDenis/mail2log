@@ -1,3 +1,10 @@
+mail2log 1.3 - 2026.11.15
+===========================================================
+* Add Claude to contributors
+* [fix] Log the user who sent the mail
+* [new] Dashboard warning while mails are not sent
+* [docs] Add a user guide in French, with screenshots
+
 mail2log 1.2 - 2026.11.05
 ===========================================================
 * Bump Dotclear from 2.36 to 2.39
