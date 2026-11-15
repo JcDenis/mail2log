@@ -12,6 +12,8 @@ _mail2log_ is a plugin for the open-source web publishing software called [Dotcl
 
 > Replace mail function and send them to Dotclear's log database table.
 
+A [user guide in French](https://github.com/JcDenis/mail2log/blob/master/docs/fr/utilisation.md) is available.
+
 ## REQUIREMENTS
 
 * Dotclear 2.39
@@ -32,6 +34,7 @@ To catch them too, define the function `_mail()` in your Dotclear configuration 
 
 ## LINKS
 
+* [User guide (in French)](https://github.com/JcDenis/mail2log/blob/master/docs/fr/utilisation.md)
 * [License](https://github.com/JcDenis/mail2log/blob/master/LICENSE)
 * [Packages & details](https://github.com/JcDenis/mail2log/releases) (or on [Repository](https://dotclear.org/plugin/detail/mail2log))
 * [Sources & contributions](https://github.com/JcDenis/mail2log)
