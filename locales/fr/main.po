@@ -16,3 +16,6 @@ msgstr "Mail en log"
 msgid "Do not send mails but log them"
 msgstr "Ne pas envoyer les mails mais les loguer"
 
+
+msgid "Plugin \"Mail to log\" is enabled: mails are not sent but recorded in logs. Use it only for development."
+msgstr "Le plugin « Mail en log » est activé : les mails ne sont pas envoyés mais enregistrés dans le journal. À n'utiliser que pour le développement."
