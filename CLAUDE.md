@@ -17,14 +17,16 @@ Required Dotclear and PHP versions: see `_define.php`.
 
 ## Structure
 
+* `src/Backend.php`: admin side: dashboard warning.
 * `src/My.php`: module helpers (`My::id()`, settings, permissions).
 * `src/Prepend.php`: loaded on every request: autoload, URL handlers, permission types.
 * `src/Uninstall.php`: cleaners for the plugin Uninstaller.
-* `src/_mail.php`
+* `src/_mail.php`: the `_mail()` function used by the core instead of PHP `mail()`.
+* Behaviors used: `adminDashboardMessage`.
 
 ## Pitfalls
 
-* None recorded yet: add here the traps met while working on the module.
+* Plugins are not loaded on the admin login page: mails sent there (password recovery) are not caught.
 
 ## Testing
 
