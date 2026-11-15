@@ -20,11 +20,15 @@ _mail2log_ is a plugin for the open-source web publishing software called [Dotcl
 
 ## USAGE
 
-First install _mail2log_, manualy from a zip package or from 
+First install _mail2log_, manually from a zip package or from
 Dotclear plugins repository. (See Dotclear's documentation to know how do this)
 
 !!! Because of this plugin, no more mail will be sent !!!
-Use it for dev only.
+Use it for dev only. A warning is shown on the dashboard while the plugin is enabled.
+
+Mails sent before plugins are loaded are not caught and are really sent,
+for example the password recovery from the administration login page.
+To catch them too, define the function `_mail()` in your Dotclear configuration file.
 
 ## LINKS
 
